@@ -18,7 +18,9 @@
         android:layout_marginTop="23dp"
         android:layout_toLeftOf="@+id/button1"
         android:ems="10"
-        android:inputType="text" >
+        android:inputType="text"
+        android:textColor="@color/hoco_green"
+        android:textColorHint="@color/hoco_green" >
 
         <requestFocus />
     </EditText>
@@ -32,5 +34,22 @@
         android:background="@color/hoco_blue"
         android:text="@string/searchButton"
         android:textColor="@color/black" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/editText1"
+        android:layout_marginBottom="262dp"
+        android:drawSelectorOnTop="true"
+        android:layout_marginTop="38dp"
+        android:background="@color/hoco_green"
+        android:entries="@array/impact_areas"
+        android:paddingBottom="5dp"
+        android:spinnerMode="dropdown"
+        android:textSize="20sp"
+        android:paddingTop="5dp" />
 
 </RelativeLayout>

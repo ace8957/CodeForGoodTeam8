@@ -8,6 +8,23 @@
     <string name="event_button">Events</string>
     <string name="account_button">My Account</string>
     <string name="searchButton">Search</string>
+<<<<<<< Updated upstream
     <string name="title_activity_login">LoginActivity</string>
+=======
+    <string-array name="impact_areas">
+        <item>Arts And Culture</item>
+        <item>Childern And Youth Education</item>
+        <item>Health And Wellness</item>
+        <item>Senior Services</item>
+        <item>Animals</item>
+        <item>Hunger and Homeless</item>
+        <item>Civic And Community</item>
+        <item>Immigrant and Reugee Services</item>
+        <item>Sports and Education</item>
+        <item>Family Services</item>
+        <item>Enviroment</item>
+        <item>Other</item>
+    </string-array>
+>>>>>>> Stashed changes
 
 </resources>
