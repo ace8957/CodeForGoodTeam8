@@ -1,6 +1,6 @@
 package com.example.handsoncentralohio;
 
-public class Event {
+public class EventData {
 
 	/**
 	 * Private fields for a volunteer opportunity.
