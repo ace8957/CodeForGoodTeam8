@@ -16,7 +16,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="130dp"
-        android:onClick="signUp"
+        android:onClick="goToUrl ( &quot;http://www.volunteercentralohio.org/HOC__Volunteer_Opportunity_Calendar_Page&quot;);"
         android:text="Register for Event"
         android:textColor="@color/white" />
 
