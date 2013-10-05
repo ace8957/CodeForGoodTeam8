@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Event1">
+        <item >001</item>
+        <item >10//6/2013</item>
+        <item >Feed the Homeless</item>
+        <item >We will be providing the poor with food.</item>
+    </string-array>
+    <string-array name="Event2">
+        <item >002</item>
+        <item >10/21/2013</item>
+        <item >Teach People to Read Good</item>
+        <item >We will be teaching people to read good and do other things good too.</item>
+    </string-array>
+    <string-array name="Event3">
+        <item >3</item>
+        <item >11/1/2013</item>
+        <item >Trash pick-up</item>
+        <item >We will be picking up trash and other things around I-71 .</item>
+    </string-array>
+    
+</resources>
