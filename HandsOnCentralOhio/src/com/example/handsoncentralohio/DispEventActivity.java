@@ -29,7 +29,8 @@ public class DispEventActivity extends Activity {
     public static ArrayList<EventData> searchData(String keyword, ArrayList<EventData> events){
         ArrayList<EventData> results = new ArrayList<EventData>();
         for (EventData e: events){
-            if (e.getName().contains(keyword) || e.getDescr().contains(keyword)){
+            if (e.getName().contains(keyword) || e.getDescr().contains(keyword)
+                    || e.getStartDate().contains(keyword)){
                 results.add(e);
             }
         }
