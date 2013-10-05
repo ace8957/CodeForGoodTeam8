@@ -18,7 +18,7 @@ import android.support.v4.app.NavUtils;
 public class SelectedEventActivity extends Activity {
 	
 	static public int selectedID;
-
+	EventData event;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,7 +26,7 @@ public class SelectedEventActivity extends Activity {
 		// Show the Up button in the action bar.
 		setupActionBar();
 		
-		EventData event = DispEventActivity.list.get(selectedID);
+		event = DispEventActivity.list.get(selectedID);
 		
 		TextView nameText = (TextView) findViewById(R.id.textView5);
 		nameText.setText(event.getName());
@@ -41,16 +41,16 @@ public class SelectedEventActivity extends Activity {
 	
 	public EventData ed;
 	
-	public void addCalendarEvent() {
+	public void addCalendarEvent(View view) {
 		Intent intent = new Intent(Intent.ACTION_INSERT);
 		intent.setType("vnd.android.cursor.item/event");
-		intent.putExtra(Events.TITLE, ed.getName());
-		intent.putExtra(Events.DESCRIPTION, ed.getDescr());
+		intent.putExtra(Events.TITLE, event.getName());
+		intent.putExtra(Events.DESCRIPTION, event.getDescr());
 
 		int month, day, year;
-		month = Integer.parseInt(ed.getStartDate().split("/")[0]);
-		day = Integer.parseInt(ed.getStartDate().split("/")[1]);
-		year = Integer.parseInt(ed.getStartDate().split("/")[2]);
+		month = Integer.parseInt(event.getStartDate().split("/")[0]);
+		day = Integer.parseInt(event.getStartDate().split("/")[1]);
+		year = Integer.parseInt(event.getStartDate().split("/")[2]);
 		// Setting dates
 		GregorianCalendar calDate = new GregorianCalendar(year, month, day);
 		intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME,
