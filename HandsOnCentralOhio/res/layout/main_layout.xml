@@ -2,28 +2,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
     android:gravity="right"
+    android:background="@drawable/handsonlarge"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainLayoutActivity" >
 
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="21dp"
-            android:src="@drawable/hands_on_banner" />
-
         <Button
             android:id="@+id/button2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/imageView1"
             android:layout_below="@+id/button1"
             android:layout_marginTop="68dp"
             android:background="@color/hoco_blue"
@@ -34,8 +24,6 @@
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/imageView1"
-            android:layout_below="@+id/imageView1"
             android:layout_marginTop="26dp"
             android:background="@color/hoco_blue"
             android:onClick="showEvents"
