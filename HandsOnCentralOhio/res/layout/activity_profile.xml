@@ -20,4 +20,36 @@
         android:background="@color/hoco_green"
         android:entries="@array/profile_select" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_centerVertical="true"
+        android:src="@drawable/avatar" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:ems="10"
+        android:text="Name: First Last"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:ems="10"
+        android:text="Service Hours YTD: 98"
+        android:textColor="@color/white" />
+
 </RelativeLayout>
