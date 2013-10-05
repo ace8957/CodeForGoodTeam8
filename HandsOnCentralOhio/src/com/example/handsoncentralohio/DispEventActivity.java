@@ -14,7 +14,7 @@ import android.support.v4.app.NavUtils;
 
 public class DispEventActivity extends Activity {
 
-	public static ArrayList<EventData> parseArrayData(String [][] arrayData) {
+	public static ArrayList<EventData> parseArrayData(String keyword, String [][] arrayData) {
 		ArrayList <EventData> list = new ArrayList <EventData>();
 		for(int i = 0; i < arrayData.length; i++) {
 			EventData ed = new EventData();
@@ -22,20 +22,19 @@ public class DispEventActivity extends Activity {
 					arrayData[i][3]);
 			list.add(ed);
 		}
+        if (keyword.length() > 0){
+            ArrayList<EventData> tempList = new ArrayList<EventData>(list);
+            list.clear();
+            for (EventData e: tempList){
+                if (e.getName().contains(keyword) || e.getDescr().contains(keyword)
+                        || e.getStartDate().contains(keyword)){
+                    list.add(e);
+                }
+            }
+        }
 		return list;
 		
 	}
-
-    public static ArrayList<EventData> searchData(String keyword, ArrayList<EventData> events){
-        ArrayList<EventData> results = new ArrayList<EventData>();
-        for (EventData e: events){
-            if (e.getName().contains(keyword) || e.getDescr().contains(keyword)
-                    || e.getStartDate().contains(keyword)){
-                results.add(e);
-            }
-        }
-        return results;
-    }
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +44,8 @@ public class DispEventActivity extends Activity {
 		setupActionBar();
 		
 		// Text View setting for table...
-		ArrayList <EventData> list = parseArrayData(RawData.data);
+        String keyword = "";
+		ArrayList <EventData> list = parseArrayData(keyword, RawData.data);
 		int numEvents = list.size();
 		int curElementOnPage = 0;
 		

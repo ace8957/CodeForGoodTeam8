@@ -3,22 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:onClick="signUp;"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".SelectedEventActivity" >
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="130dp"
-        android:onClick="goToUrl ( &quot;http://www.volunteercentralohio.org/HOC__Volunteer_Opportunity_Calendar_Page&quot;);"
-        android:text="Register for Event"
-        android:textColor="@color/white" />
 
     <TextView
         android:id="@+id/textView1"
@@ -56,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView1"
-        android:layout_alignLeft="@+id/textView2"
+        android:layout_centerHorizontal="true"
         android:text="TextView" />
 
     <TextView
@@ -75,5 +65,14 @@
         android:layout_below="@+id/textView3"
         android:layout_marginTop="16dp"
         android:text="TextView" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="117dp"
+        android:text="Register For Event" />
 
 </RelativeLayout>

@@ -55,11 +55,11 @@ public class SelectedEventActivity extends Activity {
 	}
 	public void signUp(View view)
 	{
-		if(MainLayoutActivity.loggedIn())
-		{
+		//if(MainLayoutActivity.loggedIn())
+		//{	
 			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.volunteercentralohio.org/HOC__Volunteer_Opportunity_Calendar_Page&quot"));
 			startActivity(browserIntent);
-		}
+		//}
 	}
 	//android:onClick="goToUrl ( &quot;http://www.volunteercentralohio.org/HOC__Volunteer_Opportunity_Calendar_Page&quot;);"
 }
