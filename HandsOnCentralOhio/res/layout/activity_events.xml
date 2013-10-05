@@ -34,6 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
         android:background="@color/hoco_blue"
+        android:onClick="clickSearch"
         android:text="@string/searchButton"
         android:textColor="@color/black"
         android:textSize="30sp" />

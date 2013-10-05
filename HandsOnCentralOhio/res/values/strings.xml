@@ -27,27 +27,33 @@
         <item>Enviroment</item>
         <item>Other</item>
     </string-array>
-        <string name="password_text">Password</string>
-        <string name="username_text">Username</string>
-        <string name="login_button">Login</string>
-	<string-array name="event_time">
-	    <item>1/1/2011</item>
-	    <item>1/2/2012</item>
-	    <item>1/3/2013</item>
-	</string-array>
-	<string-array name="event_name">
-	    <item>Event 1</item>
-	    <item>Event 2</item>
-	    <item>Event 3</item>
-	</string-array>
+
+    <string name="password_text">Password</string>
+    <string name="username_text">Username</string>
+    <string name="login_button">Login</string>
+
+    <string-array name="event_time">
+        <item>1/1/2011</item>
+        <item>1/2/2012</item>
+        <item>1/3/2013</item>
+    </string-array>
+    <string-array name="event_name">
+        <item>Event 1</item>
+        <item>Event 2</item>
+        <item>Event 3</item>
+    </string-array>
+
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
+
     <string-array name="profile_select">
-        <item >Profile</item>
-        <item >Scheduled Events</item>
-        <item >Past Events</item>
+        <item>Profile</item>
+        <item>Scheduled Events</item>
+        <item>Past Events</item>
     </string-array>
+
+    <string name="title_activity_disp_event">Display Event Activity</string>
 
 </resources>

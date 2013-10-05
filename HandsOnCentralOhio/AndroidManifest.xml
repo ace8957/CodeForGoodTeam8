@@ -46,6 +46,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.handsoncentralohio.MainLayoutActivity" />
         </activity>
+        <activity
+            android:name="com.example.handsoncentralohio.DispEventActivity"
+            android:label="@string/title_activity_disp_event"
+            android:parentActivityName="com.example.handsoncentralohio.EventsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.handsoncentralohio.EventsActivity" />
+        </activity>
     </application>
 
 </manifest>
