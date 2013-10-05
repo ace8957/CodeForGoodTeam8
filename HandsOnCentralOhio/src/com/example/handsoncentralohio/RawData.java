@@ -1,7 +1,7 @@
 package com.example.handsoncentralohio;
 
-public class rawData {
-	String[][] data = { 
+public class RawData {
+	static String[][] data = { 
 			{"1", "10/6/2013", "Feed the Homeless", "We will be feeding the poor food from our soup kitchen" },
 			{"2", "10/10/2013", "Teach People to Read Good", "We will be teaching people to read good, and do other things good too." },
 			{"3", "10/11/2013", "Feed the Homeless", "We will be feeding the poor food from our soup kitchen" },
