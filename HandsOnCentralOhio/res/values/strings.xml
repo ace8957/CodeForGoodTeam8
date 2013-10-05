@@ -9,6 +9,7 @@
     <string name="account_button">My Account</string>
     <string name="searchButton">Search</string>
     <string name="title_activity_login">LoginActivity</string>
+
     <string-array name="impact_areas">
         <item>Arts And Culture</item>
         <item>Childern And Youth Education</item>
@@ -22,6 +23,16 @@
         <item>Family Services</item>
         <item>Enviroment</item>
         <item>Other</item>
+    </string-array>
+
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string-array name="profile_select">
+        <item >Profile</item>
+        <item >Scheduled Events</item>
+        <item >Past Events</item>
     </string-array>
 
 </resources>
