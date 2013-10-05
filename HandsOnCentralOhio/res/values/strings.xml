@@ -23,5 +23,8 @@
         <item>Enviroment</item>
         <item>Other</item>
     </string-array>
+        <string name="password_text">Password</string>
+        <string name="username_text">Username</string>
+        <string name="login_button">Login</string>
 
 </resources>

@@ -29,4 +29,10 @@ public class MainLayoutActivity extends Activity {
     	startActivity(intent);
     }
     
+    public void showLogin (View view)
+    {
+    	Intent intent = new Intent(this, LoginActivity.class);
+    	startActivity(intent);
+    }
+    
 }

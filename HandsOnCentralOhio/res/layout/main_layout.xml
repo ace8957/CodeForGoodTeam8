@@ -17,6 +17,7 @@
             android:layout_below="@+id/button1"
             android:layout_marginTop="68dp"
             android:background="@color/hoco_blue"
+            android:onClick="showLogin"
             android:text="@string/account_button"
             android:textColor="@color/black" />
 
