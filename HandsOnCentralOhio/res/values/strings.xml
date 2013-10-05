@@ -8,9 +8,7 @@
     <string name="event_button">Events</string>
     <string name="account_button">My Account</string>
     <string name="searchButton">Search</string>
-<<<<<<< Updated upstream
     <string name="title_activity_login">LoginActivity</string>
-=======
     <string-array name="impact_areas">
         <item>Arts And Culture</item>
         <item>Childern And Youth Education</item>
@@ -25,6 +23,5 @@
         <item>Enviroment</item>
         <item>Other</item>
     </string-array>
->>>>>>> Stashed changes
 
 </resources>
