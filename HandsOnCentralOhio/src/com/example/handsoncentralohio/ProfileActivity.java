@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
 public class ProfileActivity extends Activity {
@@ -14,6 +15,18 @@ public class ProfileActivity extends Activity {
 		setContentView(R.layout.activity_profile);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		
+		
+//		for (int i = 0; i < 3; i++)
+//		{
+//				eventDate = (TextView) findViewById(R.id.imageView1);
+//				eventDate.setText(list.get(i).getStartDate().toString());
+//				eventName = (TextView) findViewById(R.id.event1name);
+//				eventName.setText(list.get(i).getName().toString());
+//				eventDesc = (TextView) findViewById(R.id.event1date);
+//				eventDesc.setText(list.get(i).getDescr().toString());
+//		}
+			
 	}
 
 	/**
