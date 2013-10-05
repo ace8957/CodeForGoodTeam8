@@ -138,11 +138,28 @@ public class DispEventActivity extends Activity {
 	
 	public void expandEvent(View view)
 	{
-		if (view.getId() == R.id.event2name)
+		if (view.getId() == R.id.event1name)
 		{
-			Intent intent = new Intent(this, SelectedEventActivity.class);
-			startActivity(intent);
+			SelectedEventActivity.selectedID = 1;
 		}
+		else if (view.getId() == R.id.event2name)
+		{
+			SelectedEventActivity.selectedID = 2;
+		}
+		else if (view.getId() == R.id.event3name)
+		{
+			SelectedEventActivity.selectedID = 3;
+		}
+		else if (view.getId() == R.id.event4name)
+		{
+			SelectedEventActivity.selectedID = 4;
+		}
+		else if (view.getId() == R.id.event5name)
+		{
+			SelectedEventActivity.selectedID = 5;
+		}
+		Intent intent = new Intent(this, SelectedEventActivity.class);
+		startActivity(intent);
 	}
 
 }

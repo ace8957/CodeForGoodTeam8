@@ -10,6 +10,8 @@ import android.view.View;
 import android.support.v4.app.NavUtils;
 
 public class SelectedEventActivity extends Activity {
+	
+	static public int selectedID;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
