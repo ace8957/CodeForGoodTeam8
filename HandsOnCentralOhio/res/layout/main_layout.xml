@@ -7,10 +7,32 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainLayoutActivity" >
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="78dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="108dp"
+        android:background="@color/hoco_blue"
+        android:text="@string/event_button"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
 
-    <TextView
+    <Button
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignRight="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="50dp"
+        android:background="@color/hoco_blue"
+        android:text="@string/account_button"
+        android:textColor="@color/black" />
 
 </RelativeLayout>
