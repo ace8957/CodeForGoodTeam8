@@ -17,33 +17,51 @@
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView android:paddingRight="10dp" android:id="@+id/event1date" />
-            <TextView android:paddingLeft="10dp" android:id="@+id/event1name"/>
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+            <TextView android:textSize="12sp" android:paddingRight="10dp" android:id="@+id/event1date" />
+            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event1name"/>
         </TableRow>
 
         <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView android:paddingRight="10dp" android:id="@+id/event1date" />
-            <TextView android:paddingLeft="10dp" android:id="@+id/event1name"/>
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+            <TextView android:textSize="12sp" android:paddingRight="10dp" android:id="@+id/event2date" />
+            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event2name" android:clickable="true" android:onClick="expandEvent"/>
         </TableRow>
 
         <TableRow
             android:id="@+id/tableRow3"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView android:paddingRight="10dp" android:id="@+id/event1date" />
-            <TextView android:paddingLeft="10dp" android:id="@+id/event1name"/>
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+            <TextView android:textSize="12sp" android:paddingRight="10dp" android:id="@+id/event3date" />
+            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event3name"/>
         </TableRow>
 
         <TableRow
             android:id="@+id/tableRow4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView android:paddingRight="10dp" android:id="@+id/event1date" />
-            <TextView android:paddingLeft="10dp" android:id="@+id/event1name"/>
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+            <TextView android:textSize="12sp" android:paddingRight="10dp" android:id="@+id/event4date" />
+            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event4name"/>
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+            <TextView android:textSize="12sp" android:paddingRight="10dp" android:id="@+id/event5date" />
+            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event5name"/>
         </TableRow>
     </TableLayout>
 
