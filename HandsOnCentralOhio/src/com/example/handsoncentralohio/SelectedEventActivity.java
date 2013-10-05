@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
 public class SelectedEventActivity extends Activity {
@@ -19,6 +20,18 @@ public class SelectedEventActivity extends Activity {
 		setContentView(R.layout.activity_selected_event);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		
+		EventData event = DispEventActivity.list.get(selectedID);
+		
+		TextView nameText = (TextView) findViewById(R.id.textView5);
+		nameText.setText(event.getName());
+		
+		TextView dateText = (TextView) findViewById(R.id.textView7);
+		dateText.setText(event.getStartDate());
+		
+		TextView descText = (TextView) findViewById(R.id.textView6);
+		descText.setText(event.getDescr());
+		
 	}
 
 	/**
