@@ -1,9 +1,12 @@
 package com.example.handsoncentralohio;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.support.v4.app.NavUtils;
 
 public class SelectedEventActivity extends Activity {
@@ -48,5 +51,13 @@ public class SelectedEventActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
+	public void signUp(View view)
+	{
+		if(MainLayoutActivity.loggedIn())
+		{
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.volunteercentralohio.org/HOC__Volunteer_Opportunity_Calendar_Page&quot"));
+			startActivity(browserIntent);
+		}
+	}
+	//android:onClick="goToUrl ( &quot;http://www.volunteercentralohio.org/HOC__Volunteer_Opportunity_Calendar_Page&quot;);"
 }
