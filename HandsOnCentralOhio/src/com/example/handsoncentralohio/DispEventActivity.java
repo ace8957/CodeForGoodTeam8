@@ -25,6 +25,17 @@ public class DispEventActivity extends Activity {
 		return list;
 		
 	}
+
+    public static ArrayList<EventData> searchData(String keyword, ArrayList<EventData> events){
+        ArrayList<EventData> results = new ArrayList<EventData>();
+        for (EventData e: events){
+            if (e.getName().contains(keyword) || e.getDescr().contains(keyword)){
+                results.add(e);
+            }
+        }
+        return results;
+    }
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

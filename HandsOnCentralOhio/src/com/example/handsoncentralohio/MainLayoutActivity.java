@@ -8,8 +8,11 @@ import android.view.Menu;
 import android.view.View;
 
 public class MainLayoutActivity extends Activity {
-
-	boolean isLoggedIn = true;
+	static boolean isLoggedIn = true;
+	public static boolean loggedIn()
+	{
+		return isLoggedIn;
+	}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
