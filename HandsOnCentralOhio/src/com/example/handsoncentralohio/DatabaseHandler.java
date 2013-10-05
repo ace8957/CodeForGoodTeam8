@@ -56,8 +56,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		SQLiteDatabase db = this.getWritableDatabase();
 		ContentValues values = new ContentValues();
 		values.put(KEY_ID, Integer.parseInt(event[0]));
-		values.put(KEY_NAME, event[1]);
-		values.put(KEY_START_DATE, event[2]);
+		values.put(KEY_NAME, event[2]);
+		values.put(KEY_START_DATE, event[1]);
 		values.put(KEY_DESCRIPTION, event[3]);
 		
 		db.insert(TABLE_EVENTS, null, values);
