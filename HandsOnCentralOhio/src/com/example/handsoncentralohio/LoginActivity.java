@@ -16,8 +16,8 @@ public class LoginActivity extends Activity {
 	
 	//EditText username;
 	//EditText password;
-	String username;
-	String password;
+	private String username;
+	private String password;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +60,7 @@ public class LoginActivity extends Activity {
 	}
 	
 	public void onClick(View view) {
+		
 		((InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE)).toggleSoftInput(InputMethodManager.RESULT_HIDDEN, 0);
 	}
 	
