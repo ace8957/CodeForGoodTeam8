@@ -1,5 +1,6 @@
 package com.example.handsoncentralohio;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -52,5 +53,15 @@ public class MainLayoutActivity extends Activity {
 	    	startActivity(intent);
     	}
     }
+    public void facebook(View view)
+	{
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/handson.ohio?fref=ts"));
+		startActivity(browserIntent);
+	}
+    public void twitter(View view)
+	{
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/HandsOnCntrlOH"));
+		startActivity(browserIntent);
+	}
     
 }
