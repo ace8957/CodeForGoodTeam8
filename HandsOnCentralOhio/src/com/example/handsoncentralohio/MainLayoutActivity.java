@@ -3,6 +3,7 @@ package com.example.handsoncentralohio;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.view.Menu;
 import android.view.View;
 
@@ -13,6 +14,11 @@ public class MainLayoutActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
+        SQLiteDatabase db;
+        DatabaseHandler dbh = new DatabaseHandler(this.getApplicationContext());
+        for(int i = 0; i < RawData.data.length; i++) {
+        	dbh.Add_Event(RawData.data[i]);
+        }
     }
 
 
