@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.support.v4.app.NavUtils;
+import android.text.Html;
 
 public class DispEventActivity extends Activity {
 	
@@ -63,7 +64,7 @@ public class DispEventActivity extends Activity {
 				eventDate = (TextView) findViewById(R.id.event1date);
 				eventDate.setText(list.get(i).getStartDate().toString());
 				eventName = (TextView) findViewById(R.id.event1name);
-				eventName.setText(list.get(i).getName().toString());
+				eventName.setText(Html.fromHtml("<u>"+list.get(i).getName().toString()+"</u>"));
 				eventDesc = (TextView) findViewById(R.id.event1date);
 				eventDesc.setText(list.get(i).getDescr().toString());
 			}
@@ -72,7 +73,7 @@ public class DispEventActivity extends Activity {
 				eventDate = (TextView) findViewById(R.id.event2date);
 				eventDate.setText(list.get(i).getStartDate().toString());
 				eventName = (TextView) findViewById(R.id.event2name);
-				eventName.setText(list.get(i).getName().toString());
+				eventName.setText(Html.fromHtml("<u>"+list.get(i).getName().toString()+"</u>"));
 				eventDesc = (TextView) findViewById(R.id.event2date);
 				eventDesc.setText(list.get(i).getDescr().toString());
 			}
@@ -81,7 +82,7 @@ public class DispEventActivity extends Activity {
 				eventDate = (TextView) findViewById(R.id.event3date);
 				eventDate.setText(list.get(i).getStartDate().toString());
 				eventName = (TextView) findViewById(R.id.event3name);
-				eventName.setText(list.get(i).getName().toString());
+				eventName.setText(Html.fromHtml("<u>"+list.get(i).getName().toString()+"</u>"));
 				eventDesc = (TextView) findViewById(R.id.event3date);
 				eventDesc.setText(list.get(i).getDescr().toString());
 			}
@@ -90,7 +91,7 @@ public class DispEventActivity extends Activity {
 				eventDate = (TextView) findViewById(R.id.event4date);
 				eventDate.setText(list.get(i).getStartDate().toString());
 				eventName = (TextView) findViewById(R.id.event4name);
-				eventName.setText(list.get(i).getName().toString());
+				eventName.setText(Html.fromHtml("<u>"+list.get(i).getName().toString()+"</u>"));
 				eventDesc = (TextView) findViewById(R.id.event4date);
 				eventDesc.setText(list.get(i).getDescr().toString());
 			}
@@ -99,7 +100,7 @@ public class DispEventActivity extends Activity {
 				eventDate = (TextView) findViewById(R.id.event5date);
 				eventDate.setText(list.get(i).getStartDate().toString());
 				eventName = (TextView) findViewById(R.id.event5name);
-				eventName.setText(list.get(i).getName().toString());
+				eventName.setText(Html.fromHtml("<u>"+list.get(i).getName().toString()+"</u>"));
 				eventDesc = (TextView) findViewById(R.id.event5date);
 				eventDesc.setText(list.get(i).getDescr().toString());
 			}
@@ -143,23 +144,23 @@ public class DispEventActivity extends Activity {
 	{
 		if (view.getId() == R.id.event1name)
 		{
-			SelectedEventActivity.selectedID = 1;
+			SelectedEventActivity.selectedID = 0;
 		}
 		else if (view.getId() == R.id.event2name)
 		{
-			SelectedEventActivity.selectedID = 2;
+			SelectedEventActivity.selectedID = 1;
 		}
 		else if (view.getId() == R.id.event3name)
 		{
-			SelectedEventActivity.selectedID = 3;
+			SelectedEventActivity.selectedID = 2;
 		}
 		else if (view.getId() == R.id.event4name)
 		{
-			SelectedEventActivity.selectedID = 4;
+			SelectedEventActivity.selectedID = 3;
 		}
 		else if (view.getId() == R.id.event5name)
 		{
-			SelectedEventActivity.selectedID = 5;
+			SelectedEventActivity.selectedID = 4;
 		}
 		
 		Intent intent = new Intent(this, SelectedEventActivity.class);
