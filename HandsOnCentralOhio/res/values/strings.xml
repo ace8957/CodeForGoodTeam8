@@ -8,9 +8,12 @@
     <string name="event_button">Events</string>
     <string name="account_button">My Account</string>
     <string name="searchButton">Search</string>
+    <string name="keywordHint">Enter a keyword</string>
     <string name="title_activity_login">LoginActivity</string>
 
     <string-array name="impact_areas">
+        <item>--Choose An Impact Area--</item>
+        <item>All</item>
         <item>Arts And Culture</item>
         <item>Childern And Youth Education</item>
         <item>Health And Wellness</item>

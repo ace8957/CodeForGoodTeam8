@@ -11,45 +11,47 @@
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginRight="26dp"
-        android:layout_marginTop="23dp"
-        android:layout_toLeftOf="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
         android:ems="10"
         android:inputType="text"
-        android:textColor="@color/hoco_green"
-        android:textColorHint="@color/hoco_green" >
+        android:textColor="@color/black"
+        android:hint="@string/keywordHint"
+        android:textColorHint="@color/gray"
+        android:textSize="25sp" >
 
         <requestFocus />
     </EditText>
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText1"
-        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
         android:background="@color/hoco_blue"
         android:text="@string/searchButton"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="30sp" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/editText1"
-        android:layout_marginBottom="262dp"
-        android:drawSelectorOnTop="true"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="24dp"
         android:background="@color/hoco_green"
+        android:drawSelectorOnTop="true"
         android:entries="@array/impact_areas"
         android:paddingBottom="5dp"
+        android:paddingTop="5dp"
         android:spinnerMode="dropdown"
-        android:textSize="20sp"
-        android:paddingTop="5dp" />
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
 </RelativeLayout>
