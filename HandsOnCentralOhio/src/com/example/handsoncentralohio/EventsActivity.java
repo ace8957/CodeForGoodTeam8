@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -56,6 +57,9 @@ public class EventsActivity extends Activity {
 	
 	public void clickSearch (View view)
     {
+		EditText keywordInput = (EditText) findViewById(R.id.editText1);
+		DispEventActivity.keyword = keywordInput.getText().toString(); 
+		
     	Intent intent = new Intent(this, DispEventActivity.class);
     	startActivity(intent);
     }

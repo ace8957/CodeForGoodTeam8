@@ -13,6 +13,8 @@ import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
 public class DispEventActivity extends Activity {
+	
+	static public String keyword;
 
 	public static ArrayList<EventData> parseArrayData(String keyword, String [][] arrayData) {
 		ArrayList <EventData> list = new ArrayList <EventData>();
@@ -44,7 +46,6 @@ public class DispEventActivity extends Activity {
 		setupActionBar();
 		
 		// Text View setting for table...
-        String keyword = "";
 		ArrayList <EventData> list = parseArrayData(keyword, RawData.data);
 		int numEvents = list.size();
 		int curElementOnPage = 0;
@@ -158,6 +159,7 @@ public class DispEventActivity extends Activity {
 		{
 			SelectedEventActivity.selectedID = 5;
 		}
+		
 		Intent intent = new Intent(this, SelectedEventActivity.class);
 		startActivity(intent);
 	}
