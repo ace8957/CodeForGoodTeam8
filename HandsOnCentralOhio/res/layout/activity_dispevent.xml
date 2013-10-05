@@ -21,7 +21,7 @@
             android:paddingTop="30dp"
             android:paddingBottom="30dp">
             <TextView android:textSize="12sp" android:paddingRight="10dp" android:id="@+id/event1date" />
-            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event1name"/>
+            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event1name" android:clickable="true" android:onClick="expandEvent"/>
         </TableRow>
 
         <TableRow
@@ -41,7 +41,7 @@
             android:paddingTop="30dp"
             android:paddingBottom="30dp">
             <TextView android:textSize="12sp" android:paddingRight="10dp" android:id="@+id/event3date" />
-            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event3name"/>
+            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event3name" android:clickable="true" android:onClick="expandEvent"/>
         </TableRow>
 
         <TableRow
@@ -51,7 +51,7 @@
             android:paddingTop="30dp"
             android:paddingBottom="30dp">
             <TextView android:textSize="12sp" android:paddingRight="10dp" android:id="@+id/event4date" />
-            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event4name"/>
+            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event4name" android:clickable="true" android:onClick="expandEvent"/>
         </TableRow>
         
         <TableRow
@@ -61,7 +61,7 @@
             android:paddingTop="30dp"
             android:paddingBottom="30dp">
             <TextView android:textSize="12sp" android:paddingRight="10dp" android:id="@+id/event5date" />
-            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event5name"/>
+            <TextView android:textSize="12sp" android:paddingLeft="10dp" android:id="@+id/event5name" android:clickable="true" android:onClick="expandEvent"/>
         </TableRow>
     </TableLayout>
 
