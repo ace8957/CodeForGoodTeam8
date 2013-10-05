@@ -28,28 +28,27 @@
         android:layout_centerVertical="true"
         android:src="@drawable/avatar" />
 
-    <EditText
-        android:id="@+id/editText1"
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:text="Service Hours YTD: 98"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/TextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/imageView1"
         android:layout_below="@+id/imageView1"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:text="Name: First Last"
         android:textColor="@color/white"
-        android:textColorHint="@color/white" >
-
-        <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText1"
-        android:ems="10"
-        android:text="Service Hours YTD: 98"
-        android:textColor="@color/white" />
+        android:textColorHint="@color/white" />
 
 </RelativeLayout>
