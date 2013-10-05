@@ -13,14 +13,13 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	private static final int DATABASE_VERSION = 1;
 	private static final String DATABASE_NAME = "handsOnDatabase";
 	
-	private static final String TABLE_CONTENTS = "events";
+	private static final String TABLE_EVENTS = "events";
 	
 	//column names
 	private static final String KEY_ID = "eventID";
-	//private static final String START_DATE = "startDate";
-	//private static final String END_DATE = "endDate";
-	private static final String KEY_NAME = "eventID";
-	private static final String DESCRIPTION = "description";
+	private static final String KEY_START_DATE = "startDate";
+	private static final String KEY_NAME = "eventName";
+	private static final String KEY_DESCRIPTION = "description";
 	
 	private final ArrayList<EventData> event_list = new ArrayList<EventData>();
 	
@@ -31,14 +30,15 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 	// Create Tables
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		String CREATE_EVENTS_TABLE = "CREATE TABLE " + TABLE_CONTENTS + "("
-				+ KEY_ID + " INTEGER PRIMARY KEY, " + KEY_NAME + " TEXT,"
-				+ DESCRIPTION + " TEXT)";
+		String CREATE_EVENTS_TABLE = "CREATE TABLE " + TABLE_EVENTS + "("
+				+ KEY_ID + " INTEGER PRIMARY KEY, " + KEY_NAME + " TEXT, "
+				+ KEY_START_DATE + " TEXT, " + KEY_DESCRIPTION + " TEXT)";
 		db.execSQL(CREATE_EVENTS_TABLE);
 	}
+
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		db.execSQL("DROP TABLE IF EXISTS " + TABLE_CONTENTS);
+		db.execSQL("DROP TABLE IF EXISTS " + TABLE_EVENTS);
 		onCreate(db);
 	}
 	
@@ -46,9 +46,21 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		SQLiteDatabase db = this.getWritableDatabase();
 		ContentValues values = new ContentValues();
 		values.put(KEY_NAME, event.getName());
-		values.put(DESCRIPTION, event.getDescr());
+		values.put(KEY_DESCRIPTION, event.getDescr());
 		
-		db.insert(TABLE_CONTENTS, null, values);
+		db.insert(TABLE_EVENTS, null, values);
+		db.close();
+	}
+	
+	public void Add_Event(String [] event) {
+		SQLiteDatabase db = this.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		values.put(KEY_ID, Integer.parseInt(event[0]));
+		values.put(KEY_NAME, event[1]);
+		values.put(KEY_START_DATE, event[2]);
+		values.put(KEY_DESCRIPTION, event[3]);
+		
+		db.insert(TABLE_EVENTS, null, values);
 		db.close();
 	}
 	
@@ -58,7 +70,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		try {
 			event_list.clear();
 			
-			String selectQuery = "SELECT * FROM " + TABLE_CONTENTS;
+			String selectQuery = "SELECT * FROM " + TABLE_EVENTS;
 			
 			SQLiteDatabase db = this.getWritableDatabase();
 			Cursor cursor = db.rawQuery(selectQuery, null);

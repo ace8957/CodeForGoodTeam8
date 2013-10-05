@@ -8,6 +8,7 @@ public class EventData {
 	private int id; // Unique identifier for an opportunity
 	private String name;
 	private String description;
+	private String startDate;
 
 	public void setID(int i) {
 		this.id = i;
@@ -26,5 +27,11 @@ public class EventData {
 	}
 	public String getDescr() {
 		return this.description;
+	}
+	public void setStartDate(String d) {
+		this.description = d;
+	}
+	public String getStartDate() {
+		return this.startDate;
 	}
 }
