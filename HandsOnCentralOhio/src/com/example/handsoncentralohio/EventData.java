@@ -34,4 +34,11 @@ public class EventData {
 	public String getStartDate() {
 		return this.startDate;
 	}
+	
+	public void setAll(int i, String ID, String d, String date) {
+		id = i;
+		name = ID;
+		description = d;
+		startDate = date;
+	}
 }

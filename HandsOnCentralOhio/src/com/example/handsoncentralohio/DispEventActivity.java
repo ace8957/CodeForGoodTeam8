@@ -11,6 +11,16 @@ import android.support.v4.app.NavUtils;
 
 public class DispEventActivity extends Activity {
 
+	public static ArrayList<EventData> parseArrayData(String [][] arrayData) {
+		ArrayList <EventData> list = new ArrayList <EventData>();
+		for(int i = 0; i < arrayData.length; i++) {
+			EventData ed = new EventData();
+			ed.setAll(Integer.parseInt(arrayData[i][0]), arrayData[i][1], arrayData[i][2],
+					arrayData[i][3]);
+			list.add(ed);
+		}
+		
+	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
