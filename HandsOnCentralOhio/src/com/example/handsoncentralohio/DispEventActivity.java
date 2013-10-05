@@ -28,8 +28,9 @@ public class DispEventActivity extends Activity {
             ArrayList<EventData> tempList = new ArrayList<EventData>(list);
             list.clear();
             for (EventData e: tempList){
-                if (e.getName().contains(keyword) || e.getDescr().contains(keyword)
-                        || e.getStartDate().contains(keyword)){
+                if (e.getName().toLowerCase().contains(keyword.toLowerCase())
+                        || e.getDescr().toLowerCase().contains(keyword.toLowerCase())
+                        || e.getStartDate().toLowerCase().contains(keyword.toLowerCase())){
                     list.add(e);
                 }
             }

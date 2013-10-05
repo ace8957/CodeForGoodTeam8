@@ -8,6 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="39bb3f81-4cd8-4514-bfda-e7577741e7f1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HandsOnCentralOhio/src/com/example/handsoncentralohio/DispEventActivity.java" afterPath="$PROJECT_DIR$/HandsOnCentralOhio/src/com/example/handsoncentralohio/DispEventActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CodeForGoodTeam8.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,7 +118,7 @@
       <file leaf-file-name="EventsActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HandsOnCentralOhio/src/com/example/handsoncentralohio/EventsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="25" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+            <state line="20" column="25" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -147,10 +148,10 @@
       <file leaf-file-name="DispEventActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HandsOnCentralOhio/src/com/example/handsoncentralohio/DispEventActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="28" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.40456432" vertical-offset="345" max-vertical-offset="2160">
+            <state line="32" column="88" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.6846473" vertical-offset="0" max-vertical-offset="2460">
               <folding>
-                <element signature="e#529#540#0" expanded="true" />
-                <element signature="e#843#854#0" expanded="true" />
+                <element signature="e#562#573#0" expanded="true" />
+                <element signature="e#876#887#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -575,17 +576,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HandsOnCentralOhio/src/com/example/handsoncentralohio/EventsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="569" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+        <state line="20" column="25" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HandsOnCentralOhio/src/com/example/handsoncentralohio/DispEventActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="28" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.40456432" vertical-offset="345" max-vertical-offset="2160">
+        <state line="32" column="88" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.6846473" vertical-offset="0" max-vertical-offset="2460">
           <folding>
-            <element signature="e#529#540#0" expanded="true" />
-            <element signature="e#843#854#0" expanded="true" />
+            <element signature="e#562#573#0" expanded="true" />
+            <element signature="e#876#887#0" expanded="true" />
           </folding>
         </state>
       </provider>
