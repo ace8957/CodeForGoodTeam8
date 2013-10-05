@@ -55,5 +55,6 @@
     </string-array>
 
     <string name="title_activity_disp_event">Display Event Activity</string>
+    <string name="title_activity_selected_event">SelectedEventActivity</string>
 
 </resources>
