@@ -1,9 +1,12 @@
 package com.example.handsoncentralohio;
 
+import java.util.ArrayList;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
 public class DispEventActivity extends Activity {
@@ -14,6 +17,30 @@ public class DispEventActivity extends Activity {
 		setContentView(R.layout.activity_dispevent);
 		// Show the Up button in the action bar.
 		setupActionBar();
+		
+		// Text View setting for table...
+		DatabaseHandler dbh = new DatabaseHandler(this.getApplicationContext());
+		ArrayList <EventData> list = dbh.Get_Events();
+		int numEvents = list.size();
+		int curElementOnPage = 0;
+		
+		TextView eventDate;
+		TextView eventName;
+		TextView eventDesc;
+		
+		for (int i = 0; i < numEvents; i++)
+		{
+			if (curElementOnPage == 0)
+			{
+				eventDate = (TextView) findViewById(R.id.event1date);
+				eventDate.setText(list.get(i).getStartDate().toString());
+				eventName = (TextView) findViewById(R.id.event1name);
+				eventName.setText(list.get(i).getName().toString());
+				eventDesc = (TextView) findViewById(R.id.event1date);
+				eventDesc.setText(list.get(i).getDescr().toString());
+			}
+			
+		}
 	}
 
 	/**
