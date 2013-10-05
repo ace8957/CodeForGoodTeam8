@@ -8,6 +8,7 @@ import android.view.View;
 
 public class MainLayoutActivity extends Activity {
 
+	boolean isLoggedIn = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +32,16 @@ public class MainLayoutActivity extends Activity {
     
     public void showLogin (View view)
     {
-    	Intent intent = new Intent(this, LoginActivity.class);
-    	startActivity(intent);
+    	if(isLoggedIn)//if already logged in go to profile
+    	{
+    		Intent intent = new Intent(this, ProfileActivity.class);
+    		startActivity(intent);
+    	}
+    	else
+    	{
+	    	Intent intent = new Intent(this, LoginActivity.class);
+	    	startActivity(intent);
+    	}
     }
     
 }
