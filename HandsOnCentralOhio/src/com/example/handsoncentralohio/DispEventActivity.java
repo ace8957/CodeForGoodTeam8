@@ -15,10 +15,11 @@ public class DispEventActivity extends Activity {
 		ArrayList <EventData> list = new ArrayList <EventData>();
 		for(int i = 0; i < arrayData.length; i++) {
 			EventData ed = new EventData();
-			ed.setAll(Integer.parseInt(arrayData[i][0]), arrayData[i][1], arrayData[i][2],
+			ed.setAll(Integer.parseInt(arrayData[i][0]), arrayData[i][2], arrayData[i][1],
 					arrayData[i][3]);
 			list.add(ed);
 		}
+		return list;
 		
 	}
 
@@ -40,8 +41,7 @@ public class DispEventActivity extends Activity {
 		setupActionBar();
 		
 		// Text View setting for table...
-		DatabaseHandler dbh = new DatabaseHandler(this.getApplicationContext());
-		ArrayList <EventData> list = dbh.Get_Events();
+		ArrayList <EventData> list = parseArrayData(RawData.data);
 		int numEvents = list.size();
 		int curElementOnPage = 0;
 		
