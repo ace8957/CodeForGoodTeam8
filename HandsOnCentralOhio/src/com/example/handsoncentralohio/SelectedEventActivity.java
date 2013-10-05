@@ -1,7 +1,12 @@
 package com.example.handsoncentralohio;
 
+import java.util.GregorianCalendar;
+
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.CalendarContract;
+import android.provider.CalendarContract.EventDays;
+import android.provider.CalendarContract.Events;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
@@ -32,6 +37,29 @@ public class SelectedEventActivity extends Activity {
 		TextView descText = (TextView) findViewById(R.id.textView6);
 		descText.setText(event.getDescr());
 		
+	}
+	
+	public EventData ed;
+	
+	public void addCalendarEvent() {
+		Intent intent = new Intent(Intent.ACTION_INSERT);
+		intent.setType("vnd.android.cursor.item/event");
+		intent.putExtra(Events.TITLE, ed.getName());
+		intent.putExtra(Events.DESCRIPTION, ed.getDescr());
+
+		int month, day, year;
+		month = Integer.parseInt(ed.getStartDate().split("/")[0]);
+		day = Integer.parseInt(ed.getStartDate().split("/")[1]);
+		year = Integer.parseInt(ed.getStartDate().split("/")[2]);
+		// Setting dates
+		GregorianCalendar calDate = new GregorianCalendar(year, month, day);
+		intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME,
+				  calDate.getTimeInMillis());
+		intent.putExtra(CalendarContract.EXTRA_EVENT_END_TIME,
+		  calDate.getTimeInMillis());
+		// Make it a full day event
+		intent.putExtra(CalendarContract.EXTRA_EVENT_ALL_DAY, true);
+
 	}
 
 	/**
