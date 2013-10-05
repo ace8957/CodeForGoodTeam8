@@ -8,6 +8,11 @@ import android.database.Cursor;
 import android.database.sqlite.*;
 import android.util.Log;
 
+/**
+ * 
+ * This can set up the framework for connecting our app to a SQLite database.
+ * 
+ */
 public class DatabaseHandler extends SQLiteOpenHelper {
 	
 	private static final int DATABASE_VERSION = 1;
