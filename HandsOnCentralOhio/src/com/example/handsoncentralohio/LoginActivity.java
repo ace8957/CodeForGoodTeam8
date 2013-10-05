@@ -14,8 +14,10 @@ import android.view.inputmethod.InputMethodManager;
 
 public class LoginActivity extends Activity {
 	
-	EditText username;
-	EditText password;
+	//EditText username;
+	//EditText password;
+	String username;
+	String password;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -64,12 +66,27 @@ public class LoginActivity extends Activity {
 	public void onClickLogin(View view)
 	{
 		// verify credentials...
-		username = (EditText)findViewById(R.id.username);
-		password = (EditText)findViewById(R.id.password);
+		username = ((EditText)findViewById(R.id.username)).getText().toString();
+		password = ((EditText)findViewById(R.id.password)).getText().toString();
 		
-		// move on to profile page if credentials are acceptable
-		Intent intent = new Intent(this, ProfileActivity.class);
-    	startActivity(intent);
+		boolean compare;
+		String correctPasswordForUser;//the correct password for the string
+		//get the correctPassword for the user from the database for now setting to bob
+		correctPasswordForUser = "bob";
+		if(correctPasswordForUser == "")
+		{
+			compare = false;
+		}
+		else
+		{
+			compare = (correctPasswordForUser == password);
+		}
+		if(compare)
+		{
+			// move on to profile page if credentials are acceptable
+			Intent intent = new Intent(this, ProfileActivity.class);
+	    	startActivity(intent);
+		}
 	}
 
 }
