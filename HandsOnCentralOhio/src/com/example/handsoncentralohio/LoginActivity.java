@@ -4,15 +4,19 @@ import android.os.Build;
 import android.os.Bundle;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.app.NavUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
+import android.widget.EditText;
 import android.view.inputmethod.InputMethodManager;
 
 public class LoginActivity extends Activity {
-
+	
+	EditText username;
+	EditText password;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -55,6 +59,17 @@ public class LoginActivity extends Activity {
 	
 	public void onClick(View view) {
 		((InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE)).toggleSoftInput(InputMethodManager.RESULT_HIDDEN, 0);
+	}
+	
+	public void onClickLogin(View view)
+	{
+		// verify credentials...
+		username = (EditText)findViewById(R.id.username);
+		password = (EditText)findViewById(R.id.password);
+		
+		// move on to profile page if credentials are acceptable
+		Intent intent = new Intent(this, ProfileActivity.class);
+    	startActivity(intent);
 	}
 
 }

@@ -38,6 +38,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.handsoncentralohio.MainLayoutActivity" />
         </activity>
+        <activity
+            android:name="com.example.handsoncentralohio.ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName="com.example.handsoncentralohio.MainLayoutActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.handsoncentralohio.MainLayoutActivity" />
+        </activity>
     </application>
 
 </manifest>
