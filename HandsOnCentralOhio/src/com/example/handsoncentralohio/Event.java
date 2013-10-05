@@ -2,10 +2,13 @@ package com.example.handsoncentralohio;
 
 public class Event {
 
-	private int id;
+	/**
+	 * Private fields for a volunteer opportunity.
+	 */
+	private int id; // Unique identifier for an opportunity
 	private String name;
 	private String description;
-	
+
 	public void setID(int i) {
 		this.id = i;
 	}
